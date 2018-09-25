@@ -7,16 +7,14 @@ The purpose of project are...
 ## Ansible Playbook Features
 - [x] Revert to specific snapshot
 - [x] Power on / Shutdown VMs
-- [ ] Create VM from template
-- [ ] Change IP per VM
-- [ ] Update RHEL repos
+- [x] Create VM from template
+- [x] Change IP per VM
 
 ## Ansible Tower Workflow Screenshot
 
-- [ ] Workflow 1: Create VM From Template
+- [x] Workflow 1: Create VM From Template
   - Create VM from template
   - Change IP per VM
-  - Update RHEL repos
 - [x] Workflow 2: Revert to specific snapshot
   - Power off VMs
   - Rollback snapshot
