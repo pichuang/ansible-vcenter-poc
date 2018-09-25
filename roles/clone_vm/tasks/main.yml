@@ -1,0 +1,23 @@
+---
+- name: Create a VM from a template {{ instance_hostname }}.{{ instance_domain }}
+  vmware_guest:
+    hostname: '{{ vcenter_hostname }}'
+    username: '{{ vcenter_username }}'
+    password: '{{ vcenter_password }}'
+    datacenter: '{{ vcenter_dc }}'
+    validate_certs: no
+    state: poweredon
+    name: '{{ instance_hostname }}.{{ instance_domain }}'
+    template: '{{ template_name }}'
+    folder: '{{ folder }}'
+    networks:
+    - name: VM Network
+      ip: '{{ instance_ip }}'
+      netmask: '255.255.255.0'
+      gateway: '192.168.77.254'
+      domain: 'pichuang.local'
+    customization:
+      runonce:
+        - hostnamectl set-hostname '{{ instance_hostname }}.{{ instance_domain }}'
+    wait_for_ip_address: yes
+
