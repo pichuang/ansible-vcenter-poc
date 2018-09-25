@@ -12,10 +12,10 @@ The purpose of project are...
 
 ## Ansible Tower Workflow Screenshot
 
-- [x] Workflow 1: Create VM From Template
+- [x] Workflow 1: Create VM From Template - `create_vm_from_template.yml`
   - Create VM from template
   - Change IP per VM
-- [x] Workflow 2: Revert to specific snapshot
+- [x] Workflow 2: Revert to specific snapshot - `revert_ocp_infra.yml`
   - Power off VMs
   - Rollback snapshot
   - Powen on VMs
