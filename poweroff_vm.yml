@@ -1,0 +1,22 @@
+---
+- hosts: vcenter
+  gather_facts: no
+  connection: local
+  vars:
+    vcenter_folder: /OpenShift
+    vm_hostname:
+        - master1.pichuang.local
+        - master2.pichuang.local
+        - master3.pichuang.local
+        - etcd1.pichuang.local
+        - etcd2.pichuang.local
+        - etcd3.pichuang.local
+        - infra1.pichuang.local
+        - infra2.pichuang.local
+        - worker1.pichuang.local
+        - worker2.pichuang.local
+        - lb.pichuang.local
+        - nfs.pichuang.local
+        - registry.pichuang.local
+  roles:
+    - poweroff_vm

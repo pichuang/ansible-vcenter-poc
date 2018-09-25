@@ -1,0 +1,16 @@
+---
+- name: Power on VMs
+  vmware_guest_powerstate:
+    hostname: '{{ vcenter_hostname }}'
+    username: '{{ vcenter_username }}'
+    password: '{{ vcenter_password }}'
+    validate_certs: no
+    state: powered-on
+    folder: '{{ vcenter_folder }}'
+    name: '{{ item }}'
+  with_items: '{{ vm_hostname }}'
+
+- name: Wait 60 seconds, but only start checking after 10 seconds
+  wait_for_connection:
+    delay: 10
+    timeout: 60

@@ -1,0 +1,45 @@
+# Ansible Tower PoC for VMware vCenter
+
+The purpose of project are...
+1. How to do automated integration with Red Hat Ansible Tower and VMware vCenter
+2. Provide sample playbooks based on VMware vCenter API and pyvmomi
+
+## Ansible Playbook Features
+- [x] Revert to specific snapshot
+- [x] Power on / Shutdown VMs
+- [ ] Create VM from template
+- [ ] Change IP per VM
+- [ ] Update RHEL repos
+
+## Ansible Tower Workflow Screenshot
+
+- [ ] Workflow 1: Create VM From Template
+  - Create VM from template
+  - Change IP per VM
+  - Update RHEL repos
+- [x] Workflow 2: Revert to specific snapshot
+  - Power off VMs
+  - Rollback snapshot
+  - Powen on VMs
+
+## Validation
+
+```
+```
+
+## Pre-requisites
+- VMware vCenter 6.7
+- Red Hat Ansible Tower
+- Git Server for version control (e.g GitHub)
+- Develop environment for write-up Ansible playbook. Please check the section `Installation` for more detais
+
+## Installation
+1. Install Ansible from Red Hat repository
+2. `git clone https://github.com/pichuang/ansible-vcenter`
+3. Install all dependencies by running `pip install -r requirements.txt`
+4. Fill out `ansible-vcenter/group_vars/vcenter` includes vcenter_{hostname, username, password, vcenter_dc}
+5. (Optional) For security issue, you can encryt the secrect file via `ansible-vault encrypt ansible-vcenter/group_vars/vcenter`
+
+## References
+- [Using Ansible to manage VMware Infrastructure](https://www.justai.net/en/blog/using-ansible-to-manage-vmware-infrastructure/)
+- [GitHub - justai-net/ansible_vmware_snapshot](https://github.com/justai-net/ansible_vmware_snapshot)
