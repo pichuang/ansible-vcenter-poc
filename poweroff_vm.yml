@@ -16,7 +16,9 @@
         - worker1.pichuang.local
         - worker2.pichuang.local
         - lb.pichuang.local
-        - nfs.pichuang.local
         - registry.pichuang.local
+        - efk1.pichuang.local
+        - efk2.pichuang.local
+        - efk3.pichuang.local
   roles:
     - poweroff_vm
