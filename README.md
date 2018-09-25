@@ -25,6 +25,20 @@ The purpose of project are...
 ## Validation
 
 ```
+$ ansible-playbook ping.yml
+
+PLAY [vcenter] ****************************************************************************************************************
+
+TASK [Ping] *******************************************************************************************************************
+Tuesday 25 September 2018  22:40:02 +0800 (0:00:00.046)       0:00:00.046 *****
+ok: [vcenter.pichuang.local]
+
+PLAY RECAP ********************************************************************************************************************
+vcenter.pichuang.local     : ok=1    changed=0    unreachable=0    failed=0
+
+Tuesday 25 September 2018  22:40:03 +0800 (0:00:00.190)       0:00:00.236 *****
+===============================================================================
+Ping ------------------------------------------------------------------------------------------------------------------- 0.19s
 ```
 
 ## Pre-requisites
@@ -35,10 +49,10 @@ The purpose of project are...
 
 ## Installation
 1. Install Ansible from Red Hat repository
-2. `git clone https://github.com/pichuang/ansible-vcenter`
+2. Clone repos `git clone https://github.com/pichuang/ansible-vcenter`
 3. Install all dependencies by running `pip install -r requirements.txt`
 4. Fill out `ansible-vcenter/group_vars/vcenter` includes vcenter_{hostname, username, password, vcenter_dc}
-5. (Optional) For security issue, you can encryt the secrect file via `ansible-vault encrypt ansible-vcenter/group_vars/vcenter`
+5. (Optional) For security issue, you can encryt the secrect file via `ansible-vault encrypt/decrypt`
 
 ## References
 - [Using Ansible to manage VMware Infrastructure](https://www.justai.net/en/blog/using-ansible-to-manage-vmware-infrastructure/)
