@@ -1,0 +1,10 @@
+---
+- hosts: vcenter
+  gather_facts: no
+  connection: local
+  vars:
+    pg_name: VLAN_103
+    vid: 103
+    vds_name: BigVLAN_vds
+  roles:
+    - create_portgroup

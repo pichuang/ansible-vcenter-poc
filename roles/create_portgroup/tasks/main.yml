@@ -1,0 +1,13 @@
+---
+- name: Create VLAN portgroup {{ pg_name }}
+  vmware_dvs_portgroup:
+    hostname: "{{ vcenter_hostname }}"
+    username: "{{ vcenter_username }}"
+    password: "{{ vcenter_password }}"
+    validate_certs: no
+    portgroup_name: "{{ pg_name }}"
+    switch_name: "{{ vds_name }}"
+    vlan_id: "{{ vid }}"
+    portgroup_type: earlyBinding
+    num_ports: 8
+    state: present
