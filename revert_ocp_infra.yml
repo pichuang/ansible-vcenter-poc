@@ -20,7 +20,7 @@
         - efk1.pichuang.local
         - efk2.pichuang.local
         - efk3.pichuang.local
-    snapshot_name: init_20180923
+    snapshot_name: init_20181013
   roles:
     - poweroff_vm
     - revert_vm
