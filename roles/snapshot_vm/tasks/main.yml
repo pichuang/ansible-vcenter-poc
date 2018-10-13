@@ -1,0 +1,13 @@
+---
+- name: Take snapshot {{snapshot_name}}
+  vmware_guest_snapshot:
+    hostname: '{{ vcenter_hostname }}'
+    username: '{{ vcenter_username }}'
+    password: '{{ vcenter_password }}'
+    datacenter: '{{ vcenter_dc }}'
+    validate_certs: no
+    state: create
+    folder: '{{ vcenter_folder }}'
+    name: '{{ item }}'
+    snapshot_name: '{{ snapshot_name }}'
+  with_items: '{{ vm_hostname }}'
