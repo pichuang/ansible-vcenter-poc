@@ -6,7 +6,7 @@
     password: '{{ vcenter_password }}'
     datacenter: '{{ vcenter_dc }}'
     validate_certs: no
-    state: create
+    state: present
     folder: '{{ vcenter_folder }}'
     name: '{{ item }}'
     snapshot_name: '{{ snapshot_name }}'
