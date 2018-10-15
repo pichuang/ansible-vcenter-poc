@@ -9,6 +9,8 @@ The purpose of project are...
 - [x] Power on / Shutdown VMs
 - [x] Create VM from template
 - [x] Change IP per VM
+- [x] Take snapshot
+- [x] Create VDS Port Group
 
 ## Ansible Tower Workflow Screenshot
 
@@ -18,7 +20,7 @@ The purpose of project are...
 - [x] Workflow 2: Revert to specific snapshot - `revert_ocp_infra.yml`
   - Power off VMs
   - Rollback snapshot
-  - Powen on VMs
+  - Power on VMs
 
 ## Validation
 
