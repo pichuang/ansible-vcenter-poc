@@ -16,9 +16,12 @@
         - worker1.ocp.local
         - worker2.ocp.local
         - lb.ocp.local
-        #- registry.ocp.local
         - efk1.ocp.local
         - efk2.ocp.local
         - efk3.ocp.local
+        - quay.pichuang.local
+        - nfs.misc.local
+        - jump.pichuang.local
+        - pf.pichuang.local
   roles:
     - poweroff_vm
