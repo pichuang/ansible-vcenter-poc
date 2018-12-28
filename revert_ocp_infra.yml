@@ -8,14 +8,14 @@
         - master1.ocp.local
         - master2.ocp.local
         - master3.ocp.local
-        - etcd1.ocp.local
-        - etcd2.ocp.local
-        - etcd3.ocp.local
+        #- etcd1.ocp.local
+        #- etcd2.ocp.local
+        #- etcd3.ocp.local
         - infra1.ocp.local
         - infra2.ocp.local
         - worker1.ocp.local
         - worker2.ocp.local
-        - lb.ocp.local
+        #- lb.ocp.local
         #- registry.ocp.local
         - efk1.ocp.local
         - efk2.ocp.local
