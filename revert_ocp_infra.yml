@@ -15,12 +15,12 @@
         - infra2.ocp.local
         - worker1.ocp.local
         - worker2.ocp.local
-        #- lb.ocp.local
+        - lb.ocp.local
         #- registry.ocp.local
         - efk1.ocp.local
         - efk2.ocp.local
         - efk3.ocp.local
-    snapshot_name: init_20181014
+    snapshot_name: init_20181229
   roles:
     - poweroff_vm
     - revert_vm

@@ -6,7 +6,8 @@
     instance_hostname: 'quay'
     instance_domain: 'pichuang.local'
     instance_ip: '192.168.77.100'
-    template_name: 'rhel75-template'
+    instance_gateway: '192.168.77.254'
+    template_name: 'rhel76-20190716'
     folder: '/Misc'
   roles:
     - clone_vm
