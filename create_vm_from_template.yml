@@ -4,6 +4,7 @@
   connection: local
   vars:
     instance_hostname: 'quay'
+    instance_networkname: 'VLAN_101'
     instance_domain: 'pichuang.local'
     instance_ip: '192.168.77.100'
     instance_gateway: '192.168.77.254'
