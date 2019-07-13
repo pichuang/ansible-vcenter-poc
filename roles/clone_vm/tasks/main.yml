@@ -11,7 +11,7 @@
     template: '{{ template_name }}'
     folder: '{{ folder }}'
     hardware:
-      memory: '{{ instance_memory }}'
+      memory_mb: '{{ instance_memory }}'
       num_cpus: '{{ instance_cpu }}'
     networks:
     - name: '{{ instance_networkname }}'
