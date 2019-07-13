@@ -10,8 +10,11 @@
     name: '{{ instance_hostname }}.{{ instance_domain }}'
     template: '{{ template_name }}'
     folder: '{{ folder }}'
+    hardware:
+      memory: '{{ instance_memory }}'
+      num_cpus: '{{ instance_cpu }}'
     networks:
-    - name: VM Network
+    - name: '{{ instance_networkname }}'
       ip: '{{ instance_ip }}'
       netmask: '255.255.255.0'
       gateway: '{{ instance_gateway }}'
@@ -20,7 +23,8 @@
       dns_servers:
       - 192.168.77.100
       domain: '{{ instance_domain }}'
-      runonce:
-        - hostnamectl set-hostname '{{ instance_hostname }}.{{ instance_domain }}'
+      hostname: '{{ instance_hostname }}'
+      dns_suffix:
+      - '{{ instance_domain }}'
     wait_for_ip_address: yes
 
