@@ -13,6 +13,7 @@
     hardware:
       memory_mb: '{{ instance_memory }}'
       num_cpus: '{{ instance_cpu }}'
+      hotadd_memory: True
     networks:
     - name: '{{ instance_networkname }}'
       ip: '{{ instance_ip }}'
@@ -26,5 +27,7 @@
       hostname: '{{ instance_hostname }}'
       dns_suffix:
       - '{{ instance_domain }}'
+      runonce:
+      - 'hostnamectl set-hostname {{ instance_hostname }}.{{ instance_domain }}'
     wait_for_ip_address: yes
 
