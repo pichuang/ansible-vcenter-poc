@@ -1,8 +1,8 @@
 ---
 - name: Create a VM from a template {{ instance_hostname }}.{{ instance_domain }}
   vmware_guest:
-    hostname: '{{ VMWARE_HOST }}'
-    username: '{{ VMWARE_USER }}'
+    hostname: '{{ VMWARE_HOSTNAME }}'
+    username: '{{ VMWARE_USERNAME }}'
     password: '{{ VMWARE_PASSWORD }}'
     datacenter: '{{ VMWARE_DC }}'
     validate_certs: no
