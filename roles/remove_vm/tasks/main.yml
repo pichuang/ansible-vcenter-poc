@@ -7,5 +7,6 @@
     datacenter: '{{ VMWARE_DC }}'
     validate_certs: no
     state: absent
+    force: yes
     name: '{{ instance_hostname }}.{{ instance_domain }}'
 
