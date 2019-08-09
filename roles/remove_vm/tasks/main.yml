@@ -1,0 +1,11 @@
+---
+- name: Remove VM from {{ instance_hostname }}.{{ instance_domain }}
+  vmware_guest:
+    hostname: '{{ VMWARE_HOSTNAME }}'
+    username: '{{ VMWARE_USERNAME }}'
+    password: '{{ VMWARE_PASSWORD }}'
+    datacenter: '{{ VMWARE_DC }}'
+    validate_certs: no
+    state: absent
+    name: '{{ instance_hostname }}.{{ instance_domain }}'
+
