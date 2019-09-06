@@ -10,6 +10,7 @@
     name: '{{ instance_hostname }}.{{ instance_domain }}'
     template: '{{ template_name }}'
     folder: '{{ folder }}'
+    datastore: '{{ datastore }}'
     hardware:
       memory_mb: '{{ instance_memory }}'
       num_cpus: '{{ instance_cpu }}'

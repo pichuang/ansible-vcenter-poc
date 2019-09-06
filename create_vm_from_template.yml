@@ -12,5 +12,6 @@
     instance_memory: 4
     template_name: 'rhel76-20190716'
     folder: '/Misc'
+    datastore: 'esxi-1.local_vm_pool'
   roles:
     - clone_vm
