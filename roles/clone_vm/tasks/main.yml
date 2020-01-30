@@ -26,7 +26,5 @@
       - 192.168.77.100
       hostname: '{{ instance_hostname }}'
       domain: '{{ instance_domain }}'
-      runonce:
-      - 'hostnamectl set-hostname {{ instance_hostname }}.{{ instance_domain }}'
     wait_for_ip_address: yes
 
