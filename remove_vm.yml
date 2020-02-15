@@ -3,8 +3,7 @@
   gather_facts: no
   connection: local
   vars:
-    instance_hostname: 'quayv3'
-    instance_networkname: 'Outside_77'
-    instance_domain: 'pichuang.local'
+    instance_name: 'test.pichuang.local'
+    folder: '/Misc'
   roles:
     - remove_vm

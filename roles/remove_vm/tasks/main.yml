@@ -8,5 +8,6 @@
     validate_certs: no
     state: absent
     force: yes
-    name: '{{ instance_hostname }}.{{ instance_domain }}'
+    folder: '{{ folder }}'
+    name: '{{ instance_name }}'
 
