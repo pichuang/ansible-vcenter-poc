@@ -21,11 +21,12 @@
       netmask: '255.255.255.0'
       gateway: '{{ instance_gateway }}'
       domain: '{{ instance_domain }}'
+      start_connected: True
     customization:
       dns_servers:
       - 192.168.78.100
       hostname: '{{ instance_hostname }}'
       domain: '{{ instance_domain }}'
-    wait_for_ip_address: yes
-    wait_for_customization: yes
+    wait_for_ip_address: True
+    wait_for_customization: True
 
