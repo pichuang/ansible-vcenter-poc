@@ -28,5 +28,5 @@
       hostname: '{{ instance_hostname }}'
       domain: '{{ instance_domain }}'
     wait_for_ip_address: True
-    wait_for_customization: True
+    wait_for_customization: False
 
